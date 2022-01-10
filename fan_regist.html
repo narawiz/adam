@@ -1,0 +1,125 @@
+<title></title>
+ <meta charset="UTF-8">
+ </head>
+<body bgcolor="#D7EAF7" text="#000f57">
+<center>
+<p><br>
+<img src="regist_title.gif">
+<br>
+<font face="휴먼엽서체,굴림,Arial" size="2">
+<font face="휴먼엽서체,굴림,Arial" size="2" color="#9E36AD"><b>이름(실명), 아이디, 비밀번호, 소속(학교, 직장)</b></font>은 꼭 쓰셔야 합니다.<br>
+그렇지 않을 경우 ID를 만들수 없습니다.<br> 홈페이지와 E-Mail 주소가 없으면 공란으로 
+비우셔도 됩니다. </font>
+
+<br>
+
+<form method="POST" action="regist.asp">
+
+<table width="76%" border="0" cellpadding="3" cellspacing="3">
+
+<tr>
+<td bgcolor="#7baedd" width="30%"><font face="굴림" size="2"><b>이름</b></font></td>
+<td bgcolor="#afd5ee"><input type="text" name="realname" size="8" maxlength="8" value="*"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>아이디 </b><br>(한글가능, 영문10자/한글5자 이내)</font></td>
+<td bgcolor="#afd5ee"><input type="text" name="name" size="8" maxlength="10" value="*"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>비밀번호 </b><br>(영문/숫자만 가능, 8자 이내)</font></td>
+<td bgcolor="#afd5ee"><input type="passwd" name="passwd" size="10" maxlength="8" value="*"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>학교/회사</b></font></td>
+<td bgcolor="#afd5ee"><input type="text" name="position" size="17" value="*"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>성별</b></font></td>
+<td bgcolor="#afd5ee"><font face="굴림" size="2"><input type="radio" name="sex" value="남">남<input type="radio" name="sex" value="여" checked>여</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>생년월일</b></font></td>
+<td bgcolor="#afd5ee"><font face="굴림" size="2"><input type="text" name="year" size="2" maxlength="4">년<input type="text" name="month" size="2" maxlength="2">월<input type="text" name="day" size="2" maxlength="2">일</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>홈페이지 </b></font></td>
+<td bgcolor="#afd5ee"><font size="-1"><input type="text" name="url" size="26"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>E-Mail </b></font></td>
+<td bgcolor="#afd5ee"><input type="text" name="email" size="26"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>사용중인 통신 ID</b></font></td>
+<td bgcolor="#afd5ee"><select name="tongsin">
+     <option selected value="천리안">천리안
+     <option value="하이텔">하이텔
+     <option value="유니텔">유니텔
+     <option value="나우누리">나우누리
+     <option value="넷츠고">넷츠고
+	 <option value="체널아이">체널아이
+     </select>
+    <input type="text" name="pid" size="10" maxlength="20"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>주소</b> (자세히)</font></td>
+<td bgcolor="#afd5ee"><input type="text" name="address" size="40"></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>연락처</b>(전화번호,호출기)</font></td>
+<td bgcolor="#afd5ee"><font face="굴림" size="2">자택   &nbsp;&nbsp;&nbsp;</font><input type="text" name="homephone" size="26"><br>
+    <font face="굴림" size="2">직장   &nbsp;&nbsp;&nbsp;</font><input type="text" name="officephone" size="26"><br>
+    <font face="굴림" size="2">휴대폰   </font><input type="text" name="handphone" size="26"><br>
+    <font face="굴림" size="2">호출기   </font><input type="text" name="pager" size="26"><br>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd" valign="top"><font face="굴림" size="-1"><b>자기소개</b></font></td>
+<td bgcolor="#afd5ee"><textarea name="profile" rows="10" cols="40"></textarea></td>
+</tr>
+
+<tr>
+<td bgcolor="#7baedd"><font face="굴림" size="2"><b>메일링 리스트 신청하기</b></font></td>
+<td bgcolor="#afd5ee"><font face="굴림" size="2"><input type="radio" name="wish" value="아니오">아니오<input type="radio" name="wish" value="예" checked>예</font></td></tr>
+
+<tr>
+<td bgcolor="#7baedd" valign="top"><font face="굴림" size="-1"><b>공개여부</b></font></td>
+<td bgcolor="#afd5ee"><font face="굴림" size="-1">팬클럽 회원끼리 서로의 정보를 얻을 수 있습니다.<br>
+ 공개를 선택하시면 자신의 모든 정보를, 비공개를 선택 하시면 이름,아이디,성별,홈페이지,이메일에 대한 정보를 다른 회원이 열람할 수 있습니다.<br>
+ <input type="radio" name="gonggae" value="비공개">비공개<input type="radio" name="gonggae" value="공개" checked>공개</font></td>
+</tr>
+
+</table>
+
+
+<br>
+
+<input type="submit" value="[아이디 신청]">
+<input type="reset" value="[수정]">
+
+</form>
+
+<br>
+
+
+
+<font size="2" face="AvantGarde Bk BT" color="#000f57">Copyright ⓒ 1997 by Adamsoft. Co.,LTD , All rights reserved.</font>
+
+
+
+</center>
+
+</body>
+
+</html>
