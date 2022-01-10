@@ -1,0 +1,115 @@
+	<title></title>
+ <meta charset="UTF-8">
+ </head>
+
+<script language="JavaScript">
+
+
+
+<!--
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+        if (browserName == "Netscape" && browserVer >= 3){
+             init = "ne";
+            }
+        else{
+             init = "ie"; 
+            }
+
+if ((init == "ne")||((init == "ie")&&(browserVer >= 4))){
+map1s = new Image();
+map1s.src = "profile_i.gif";
+map1n = new Image();
+map1n.src = "profile.gif";
+
+map2s = new Image();
+map2s.src = "music_i.gif";
+map2n = new Image();
+map2n.src = "music.gif";
+
+map3s = new Image();
+map3s.src = "ivideo_i.gif";
+map3n = new Image();
+map3n.src = "ivideo.gif";
+
+map4s = new Image();
+map4s.src = "photo_i.gif";
+map4n = new Image();
+map4n.src = "photo.gif";
+
+map5s = new Image();
+map5s.src = "diary_i.gif";
+map5n = new Image();
+map5n.src = "diary.gif";
+
+map6s = new Image();
+map6s.src = "poems_i.gif";
+map6n = new Image();
+map6n.src = "poems.gif";
+
+
+map7s = new Image();
+map7s.src = "legend_i.gif";
+map7n = new Image();
+map7n.src = "legend.gif";
+
+map8s = new Image();
+map8s.src = "memory_i.gif";
+map8n = new Image();
+map8n.src = "memory.gif";
+
+
+
+}
+
+    function img_cha(imgName)
+    {
+      if (((init == "ne")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))){
+        imgOn = eval(imgName + "s.src");
+        document[imgName].src = imgOn;
+        }
+    }
+
+    function img_nor(imgName)
+    {
+      if (((init == "ne")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))){
+        imgOff = eval(imgName + "n.src");
+        document[imgName].src = imgOff;
+        }
+    }
+//-->
+
+
+
+
+
+</script>
+
+
+<body bgcolor="#c0c060">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr><td>
+<img src="sub_top.gif" alt="" border="0">
+<a href="profile_f.html" onmouseover="img_cha('map1')" onmouseout="img_nor('map1')" onclick="img_cha('map1')" target="body">
+<img src="profile.gif" name="map1" alt="profile" border="0"></a><br>
+<a href="music_f.html" onmouseover="img_cha('map2')" onmouseout="img_nor('map2')" onclick="img_cha('map2')" target="body">
+<img src="music.gif" name="map2" alt="music" border="0"></a><br>
+<a href="video_f.html" onmouseover="img_cha('map3')" onmouseout="img_nor('map3')" onclick="img_cha('map3')" target="body">
+<img src="video.gif" name="map3" alt="video" border="0"></a><br>
+<a href="photo_f.html" onmouseover="img_cha('map4')" onmouseout="img_nor('map4')" onclick="img_cha('map4')" target="body">
+<img src="photo.gif" name="map4" alt="photo" border="0"></a><br>
+<img src="story.gif" alt="story" border="0"><br>
+<a href="diary_f.html" onmouseover="img_cha('map5')" onmouseout="img_nor('map5')" onclick="img_cha('map5')" target="body">
+<img src="diary.gif" name="map5" alt="diary" border="0"></a><br>
+<a href="poems_f.html" onmouseover="img_cha('map6')" onmouseout="img_nor('map6')" onclick="img_cha('map6')" target="body">
+<img src="poems.gif" name="map6" alt="poems" border="0"></a><br>
+<a href="legend_f.html" onmouseover="img_cha('map7')" onmouseout="img_nor('map7')" onclick="img_cha('map7')" target="body">
+<img src="legend.gif" name="map7" alt="legend" border="0"></a><br>
+<a href="memory_f.html" onmouseover="img_cha('map8')" onmouseout="img_nor('map8')" onclick="img_cha('map8')" target="body">
+<img src="memory.gif" name="map8" alt="memory" border="0"></a><br>
+</td></tr></table>
+
+
+
+</body>
+</html>
